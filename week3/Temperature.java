@@ -22,14 +22,7 @@ public class Temperature {
 		this.scale = letter;
 	}
 	
-	public double getCelcius(Temperature t) {
-		if(t.scale == 'C') return t.temperature;
-		else {
-			t.temperature = 5 * (t.temperature - 32) / 9;
-			t.scale = 'C';
-			return t.temperature;
-		}
-	}
+	
 	public double getFahrenheit(Temperature t) {
 		if(t.scale == 'F') return t.temperature;
 		else {

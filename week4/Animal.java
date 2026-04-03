@@ -14,7 +14,7 @@ public class Animal {
     }
 
     public void makeSound() {
-        System.out.println("Animal makes a sound");
+    	System.out.println("Animal makes some sound");
     }
 
     public void eat() {

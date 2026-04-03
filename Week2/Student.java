@@ -1,33 +1,36 @@
 package Week2;
 
 public class Student {
-	
-	private String studentName;
-	private int studentID;
-	private int studentYOS;
-	
-	public Student(String name, int id, int yos) {
-		this.studentName = name;
-		this.studentID = id;
-		this.studentYOS = yos;
-	}
-	
-	public void displayDetails() {
-		System.out.println("Name - " + studentName);
-		System.out.println("ID - " + studentID);
-		System.out.println("Year of Study - " + studentYOS);
-	}
-	public void incrementID() {
-		studentID+=1;
-	}
-	
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		Student stud = new Student("Miras", 1, 2024);
-		
-		stud.displayDetails();
-		stud.incrementID();
-		stud.displayDetails();		
-	}
 
+    private String studentName;
+    private final int studentID;
+    private int yearOfStudy;
+    private double studentGPA;
+
+    public Student(String name, int id, int yos, double gpa) {
+        this.studentName = name;
+        this.studentID = id;
+        this.yearOfStudy = yos;
+        this.studentGPA = gpa;
+    }
+
+    public String getStudentName() {
+        return studentName;
+    }
+
+    public int getStudentID() {
+        return studentID;
+    }
+
+    public int getYearOfStudy() {
+        return yearOfStudy;
+    }
+
+    public double getStudentGPA() {
+        return studentGPA;
+    }
+
+    public String toString() {
+        return studentName + " (ID: " + studentID + ", GPA: " + studentGPA + ")";
+    }
 }

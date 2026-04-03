@@ -40,7 +40,6 @@ public class DragonLaunch {
         for (char ch : s.toCharArray()) {
             if (ch == 'B') dl.kidnap(new Person(Gender.BOY));
             else if (ch == 'G') dl.kidnap(new Person(Gender.GIRL));
-            else throw new IllegalArgumentException("Only B or G allowed");
         }
         return dl;
     }

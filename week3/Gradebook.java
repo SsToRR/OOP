@@ -17,12 +17,10 @@ public class Gradebook {
         students.add(s);
     }
 
-    // ===== required by lab =====
     public void displayMessage() {
         System.out.println("Welcome to the grade book for " + course.getName());
     }
 
-    // ===== calculations =====
     public double determineClassAverage() {
         if (students.isEmpty()) return 0;
 
@@ -57,7 +55,6 @@ public class Gradebook {
         return worst;
     }
 
-    // ===== statistics =====
     public void outputBarChart() {
         int a = 0, b = 0, c = 0, d = 0, f = 0;
 

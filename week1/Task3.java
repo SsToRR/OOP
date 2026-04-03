@@ -10,7 +10,10 @@ public class Task3 {
 		System.out.println("What is your mark?");
 		double num = scanner.nextInt();
 		
-		if(num >= 49.5 && num < 54.5) {
+		if(num < 49.5) {
+			System.out.println("F");
+		}
+		else if(num >= 49.5 && num < 54.5) {
 			System.out.println("D");
 		} else if(num >= 54.5 && num < 59.5) {
 			System.out.println("D+");
